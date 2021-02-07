@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#left-section{
+    background: #f2f2f2;
+    width: 25vw;
+    height: 100vh;
+}
+
+img {
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+}
+.logo{
+    text-align: center;
+    padding: 1.5em;
+}
+
+
+/* mesia quarries start */
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 3em;
+        height: 3em;
+    }
+    .logo{
+        text-align: center;
+        padding: 0.8em;
+    }
+    .fs-4{
+        font-size: 0.8em !important;
+    }
+    
+}
