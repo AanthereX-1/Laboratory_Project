@@ -19,6 +19,10 @@ img {
     padding: 1.5em;
 }
 
+.email{
+    font-size: 0.8rem;
+}
+
 #current-user{
     background: #fff;
     display: flex;
@@ -28,6 +32,7 @@ img {
     padding: 1em 0;
     margin: 1.5em 0;
 }
+
 
 #current-user img {
     width: 2.5rem;
@@ -51,10 +56,18 @@ img {
     border-radius: 20px;
 }
 
+.dash-items img{
+    width:1.8rem;
+    height:1.8rem;
+}
+
 #right-section{
     height: 100vh;
-    background: #C4C4C4;
+    background:url(./bg-content.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
 .navbar {
     background: #fff !important;
 }
@@ -67,22 +80,59 @@ img {
 }
 
 .down-arrow {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
 }
 
+.card {
+    width: auto !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow:5px 5px 5px rgba(255,255,255, 0.5);
+    border-radius: 50px;
+}
+
+.border{
+    border: 2px solid rgb(74, 74, 74) !important;
+}
+
+.card span {
+    color: rgb(61, 61, 61);
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.7);
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-container img{
+    background-position: center;
+    background-size:contain;
+}
 
 /* mesia quarries start */
 
+/* mobile devices */
+
 @media screen and (max-width: 480px) {
     img {
-        width: 3em;
-        height: 3em;
+        width: 3rem;
+        height: 3rem;
     }
     .logo{
         text-align: center;
-        padding: 0.8em;
+        padding: 0.8rem;
     }
     .fs-4{
-        font-size: 0.8em !important;
-    }    
+        font-size: 0.8rem !important;
+    }
+
+    
 }
