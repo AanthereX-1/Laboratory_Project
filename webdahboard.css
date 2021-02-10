@@ -86,10 +86,12 @@ img {
 
 .card {
     width: auto !important;
+    height: 10rem !important;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     box-shadow:5px 5px 5px rgba(255,255,255, 0.5);
     border-radius: 50px;
+    margin: 1rem !important;
 }
 
 .border{
@@ -99,12 +101,6 @@ img {
 .card span {
     color: rgb(61, 61, 61);
     text-shadow: 2px 2px 2px rgba(255,255,255,0.7);
-}
-
-.content-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .wrapper {
@@ -133,6 +129,43 @@ img {
     .fs-4{
         font-size: 0.8rem !important;
     }
-
+    .card {
+        width: auto !important;
+        height: auto !important;
+        margin: 2rem 1rem !important;
+    }
     
+    
+}
+
+/* tablet ipad and ipad pro */
+
+@media screen and (max-width: 1030px) {
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .logo{
+        text-align: center;
+        padding: 1.5rem;
+    }
+    .fs-4{
+        font-size:1rem !important;
+    }
+    .card {
+        width: 100% !important;
+        height: auto !important;
+        margin: 2rem 1rem !important;
+    }
+
+    #current-user {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    #current-user .email-container{
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }
